@@ -1,0 +1,14 @@
+C:\Repos\FlashCardCreator\FlashCardCreator\FlashCardCreator\bin\Debug\FlashCardCreator.exe.config
+C:\Repos\FlashCardCreator\FlashCardCreator\FlashCardCreator\bin\Debug\FlashCardCreator.exe
+C:\Repos\FlashCardCreator\FlashCardCreator\FlashCardCreator\bin\Debug\FlashCardCreator.pdb
+C:\Repos\FlashCardCreator\FlashCardCreator\FlashCardCreator\obj\Debug\FlashCardCreator.csprojAssemblyReference.cache
+C:\Repos\FlashCardCreator\FlashCardCreator\FlashCardCreator\obj\Debug\MainWindow.g.cs
+C:\Repos\FlashCardCreator\FlashCardCreator\FlashCardCreator\obj\Debug\App.g.cs
+C:\Repos\FlashCardCreator\FlashCardCreator\FlashCardCreator\obj\Debug\FlashCardCreator_MarkupCompile.cache
+C:\Repos\FlashCardCreator\FlashCardCreator\FlashCardCreator\obj\Debug\FlashCardCreator_MarkupCompile.lref
+C:\Repos\FlashCardCreator\FlashCardCreator\FlashCardCreator\obj\Debug\MainWindow.baml
+C:\Repos\FlashCardCreator\FlashCardCreator\FlashCardCreator\obj\Debug\FlashCardCreator.g.resources
+C:\Repos\FlashCardCreator\FlashCardCreator\FlashCardCreator\obj\Debug\FlashCardCreator.Properties.Resources.resources
+C:\Repos\FlashCardCreator\FlashCardCreator\FlashCardCreator\obj\Debug\FlashCardCreator.csproj.GenerateResource.cache
+C:\Repos\FlashCardCreator\FlashCardCreator\FlashCardCreator\obj\Debug\FlashCardCreator.exe
+C:\Repos\FlashCardCreator\FlashCardCreator\FlashCardCreator\obj\Debug\FlashCardCreator.pdb
