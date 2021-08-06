@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,30 @@ namespace FlashCardCreator
         public MainWindow()
         {
             InitializeComponent();
+            this.PreviewKeyDown += new KeyEventHandler(MainWindow_PreviewKeyDown);
+        }
+
+        private void TopOne_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            var x = (Image)sender;
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+            {
+                Uri fileUri = new Uri(openFileDialog.FileName);
+                x.Source = new BitmapImage(fileUri);
+            }
+        }
+
+        void MainWindow_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if ((e.Key == Key.P) && (Keyboard.Modifiers == ModifierKeys.Control))
+            {
+                PrintDialog printDialog = new PrintDialog();
+                if (printDialog.ShowDialog().GetValueOrDefault(false))
+                {
+                    printDialog.PrintVisual(this, this.Title);
+                }
+            }
         }
     }
 }

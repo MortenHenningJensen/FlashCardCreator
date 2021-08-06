@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FlashCardCreator"
         mc:Ignorable="d"
-        Title="Window1" Height="21cm" Width="29.9cm" FontSize="16pt">
+        Title="Window1" Height="22cm" Width="29.9cm" FontSize="16pt" ResizeMode="NoResize">
     <Grid>
         <Border BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="1px" Width="30cm" >
             <Border.BorderBrush>
@@ -19,7 +19,7 @@
             </Border.BorderBrush>
         </Border>
 
-        <Border BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Center" Height="21cm" Width="1px" Margin="7.475cm,0,0,0" >
+        <Border BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Center" Height="22cm" Width="1px" Margin="7.475cm,0,0,0" >
             <Border.BorderBrush>
                 <VisualBrush>
                     <VisualBrush.Visual>
@@ -31,7 +31,19 @@
             </Border.BorderBrush>
         </Border>
 
-        <Border BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="21cm" Width="1px" Margin="0,0,0,0" >
+        <Border BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="22cm" Width="1px" Margin="0,0,0,0" >
+            <Border.BorderBrush>
+                <VisualBrush>
+                    <VisualBrush.Visual>
+                        <Rectangle StrokeDashArray="2 4" Stroke="Gray" StrokeThickness="1"
+                             Width="{Binding RelativeSource={RelativeSource AncestorType={x:Type Border}}, Path=ActualWidth}"
+                            Height="{Binding RelativeSource={RelativeSource AncestorType={x:Type Border}}, Path=ActualHeight}"/>
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </Border.BorderBrush>
+        </Border>
+
+        <Border BorderThickness="1" HorizontalAlignment="Right" VerticalAlignment="Center" Height="22cm" Width="1px" Margin="0,0,7.475cm,0" >
             <Border.BorderBrush>
                 <VisualBrush>
                     <VisualBrush.Visual>
@@ -43,27 +55,26 @@
             </Border.BorderBrush>
         </Border>
 
-        <Border BorderThickness="1" HorizontalAlignment="Right" VerticalAlignment="Center" Height="21cm" Width="1px" Margin="0,0,7.475cm,0" >
-            <Border.BorderBrush>
-                <VisualBrush>
-                    <VisualBrush.Visual>
-                        <Rectangle StrokeDashArray="4 4" Stroke="Gray" StrokeThickness="1"
-                             Width="{Binding RelativeSource={RelativeSource AncestorType={x:Type Border}}, Path=ActualWidth}"
-                            Height="{Binding RelativeSource={RelativeSource AncestorType={x:Type Border}}, Path=ActualHeight}"/>
-                    </VisualBrush.Visual>
-                </VisualBrush>
-            </Border.BorderBrush>
-        </Border>
+        <Image Name="TopOne" HorizontalAlignment="Left" Height="322" Margin="5,10,0,0" VerticalAlignment="Top" Width="7.2cm" Stretch="Fill" Source="/Images/EmptyPicture.png" MouseLeftButtonUp="TopOne_MouseLeftButtonUp" />
+        <Image Name="TopTwo" HorizontalAlignment="Left" Height="322" Margin="286,10,0,0" VerticalAlignment="Top" Width="273" Stretch="Fill" Source="/Images/EmptyPicture.png" MouseLeftButtonUp="TopOne_MouseLeftButtonUp" />
+        <Image Name="TopThree" HorizontalAlignment="Left" Height="322" Margin="563,10,0,0" VerticalAlignment="Top" Width="273" Stretch="Fill" Source="/Images/EmptyPicture.png" MouseLeftButtonUp="TopOne_MouseLeftButtonUp"/>
+        <Image Name="TopFour" HorizontalAlignment="Left" Height="322" Margin="844,10,0,0" VerticalAlignment="Top" Width="273" Stretch="Fill" Source="/Images/EmptyPicture.png" MouseLeftButtonUp="TopOne_MouseLeftButtonUp"/>
 
-        <Image Name="TopOne" HorizontalAlignment="Left" Height="322" Margin="5,10,0,0" VerticalAlignment="Top" Width="7.2cm" Stretch="None" Source="/Images/EmptyPicture.png"/>
-        <Image Name="TopTwo" HorizontalAlignment="Left" Height="322" Margin="284,10,0,0" VerticalAlignment="Top" Width="273" Stretch="None" Source="/Images/EmptyPicture.png"/>
-        <Image Name="TopThree" HorizontalAlignment="Left" Height="322" Margin="562,10,0,0" VerticalAlignment="Top" Width="273" Stretch="None" Source="/Images/EmptyPicture.png"/>
-        <Image Name="TopFour" HorizontalAlignment="Left" Height="322" Margin="844,10,0,0" VerticalAlignment="Top" Width="273" Stretch="None" Source="/Images/EmptyPicture.png"/>
+        <Image Name="ButtomOne" HorizontalAlignment="Left" Height="322" Margin="5,408,0,0" VerticalAlignment="Top" Width="272" Stretch="Fill" Source="/Images/EmptyPicture.png" MouseLeftButtonUp="TopOne_MouseLeftButtonUp"/>
+        <Image Name="ButtomTwo" HorizontalAlignment="Left" Height="322" Margin="286,408,0,0" VerticalAlignment="Top" Width="273" Stretch="Fill" Source="/Images/EmptyPicture.png" MouseLeftButtonUp="TopOne_MouseLeftButtonUp"/>
+        <Image Name="ButtomThree" HorizontalAlignment="Left" Height="322" Margin="563,408,0,0" VerticalAlignment="Top" Width="273" Stretch="Fill" Source="/Images/EmptyPicture.png" MouseLeftButtonUp="TopOne_MouseLeftButtonUp"/>
+        <Image Name="ButtomFour" HorizontalAlignment="Left" Height="322" Margin="844,408,0,0" VerticalAlignment="Top" Width="273" Stretch="Fill" Source="/Images/EmptyPicture.png" MouseLeftButtonUp="TopOne_MouseLeftButtonUp"/>
 
-        <Image Name="ButtomOne" HorizontalAlignment="Left" Height="322" Margin="5,387,0,0" VerticalAlignment="Top" Width="272" Stretch="None" Source="/Images/EmptyPicture.png"/>
-        <Image Name="ButtomTwo" HorizontalAlignment="Left" Height="322" Margin="284,387,0,0" VerticalAlignment="Top" Width="273" Stretch="None" Source="/Images/EmptyPicture.png"/>
-        <Image Name="ButtomThree" HorizontalAlignment="Left" Height="322" Margin="562,387,0,0" VerticalAlignment="Top" Width="273" Stretch="None" Source="/Images/EmptyPicture.png"/>
-        <Image Name="ButtomFour" HorizontalAlignment="Left" Height="322" Margin="844,387,0,0" VerticalAlignment="Top" Width="273" Stretch="None" Source="/Images/EmptyPicture.png"/>
+
+        <TextBox Name="TopOneText" BorderThickness="0" HorizontalAlignment="Left" Margin="5,332,0,0" TextWrapping="Wrap" Text="Text" VerticalAlignment="Top"  Block.TextAlignment="Center" Height="44" Width="272"/>
+        <TextBox Name="TopTwoText" BorderThickness="0" HorizontalAlignment="Left" Margin="286,332,0,0" TextWrapping="Wrap" Text="Text" VerticalAlignment="Top"  Block.TextAlignment="Center" Height="44" Width="272"/>
+        <TextBox Name="TopThreeText" BorderThickness="0" HorizontalAlignment="Left" Margin="563,332,0,0" TextWrapping="Wrap" Text="Text" VerticalAlignment="Top"  Block.TextAlignment="Center" Height="44" Width="272"/>
+        <TextBox Name="TopFourText" BorderThickness="0" HorizontalAlignment="Left" Margin="844,332,0,0" TextWrapping="Wrap" Text="Text" VerticalAlignment="Top"  Block.TextAlignment="Center" Height="44" Width="272"/>
+
+        <TextBox Name="ButtomOneText" BorderThickness="0" HorizontalAlignment="Left" Margin="5,730,0,0" TextWrapping="Wrap" Text="Text" VerticalAlignment="Top"  Block.TextAlignment="Center" Height="44" Width="272"/>
+        <TextBox Name="ButtomTwoText" BorderThickness="0" HorizontalAlignment="Left" Margin="286,730,0,0" TextWrapping="Wrap" Text="Text" VerticalAlignment="Top"  Block.TextAlignment="Center" Height="44" Width="272"/>
+        <TextBox Name="ButtomThreeText" BorderThickness="0" HorizontalAlignment="Left" Margin="563,730,0,0" TextWrapping="Wrap" Text="Text" VerticalAlignment="Top"  Block.TextAlignment="Center" Height="44" Width="272"/>
+        <TextBox Name="ButtomFourText" BorderThickness="0" HorizontalAlignment="Left" Margin="844,730,0,0" TextWrapping="Wrap" Text="Text" VerticalAlignment="Top"  Block.TextAlignment="Center" Height="44" Width="272"/>
 
     </Grid>
 </Window>
